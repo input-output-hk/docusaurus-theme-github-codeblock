@@ -76,9 +76,7 @@ export async function fetchCode(
 
     return fetchResultStateDispatcher({
         type: "loaded",
-        value:
-            body.map((line) => line.slice(preceedingSpace)).join("\n") +
-            "THIS IS SHOWING",
+        value: body.map((line) => line.slice(preceedingSpace)).join("\n"),
     });
 }
 
